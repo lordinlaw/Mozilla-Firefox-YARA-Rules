@@ -1,0 +1,6 @@
+rule Firefox_6 {
+strings:
+$string = "RS01212M" wide ascii nocase
+condition:
+all of them
+}
