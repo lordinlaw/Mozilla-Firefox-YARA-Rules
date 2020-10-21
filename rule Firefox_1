@@ -1,0 +1,8 @@
+rule Firefox_1 {
+strings:
+$string1 = "Mozilla\\fort.vbs" wide ascii nocase $string2 = "Main Returned." wide ascii nocase $string3 = "\\Mozilla\\ReadMe.txt" wide ascii nocase $string4 = "Mozillafox" wide ascii nocase
+$string5 = "MozillaSciencedent.vbs" wide ascii nocase $string6 = "MozillaFirefox.exe" wide ascii nocase $string7 = "Hello World" wide ascii nocase
+$a9 = "C:\\Users\\RS01212M\\AppData\\Roaming\\generator\\proj1- FTPCenter\\FTPCenter\\Release\\Task.pdb" wide ascii nocase
+condition:
+4 of them
+}
