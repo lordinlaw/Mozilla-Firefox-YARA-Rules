@@ -1,0 +1,13 @@
+rule Firefox_3 {
+strings:
+$a1 = "task notopen" wide ascii nocase
+$a2 = "tske open" wide ascii nocase
+$a3 = "\\MozillaFirefox\\SystemExtensionsDev\\" wide ascii nocase $a4 = "MozillaUpdate.exe" wide ascii nocase
+$a5 = "147!@#Asad" wide ascii nocase
+$a6 = "Send!" wide ascii nocase
+$a7 = "MozillaFirefox\\Cache\\" wide ascii nocase
+$a8 = "ftp" wide ascii nocase
+$a9 = "C:\\Users\\RS01212M\\AppData\\Roaming\\generator\\proj1- FTPCenter\\FTPCenter\\Release\\FTPCenter.pdb" wide ascii nocase
+condition:
+4 of them
+}
