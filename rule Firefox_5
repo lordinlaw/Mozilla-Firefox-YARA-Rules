@@ -1,0 +1,14 @@
+rule Firefox_5 {
+strings:
+$a1 = "CrachReport.exe" wide ascii nocase
+$a2 = "u_ex" wide ascii nocase
+$a3 = "Hello World" wide ascii nocase
+$a4 = ".gzn" wide ascii nocase
+$a5 = "--PICE--" wide ascii nocase
+$a6 = "--PICS--" wide ascii nocase
+$a7 = "\\MozillaFirefox\\Cache" wide ascii nocase
+$a9 = "Logging.dll" wide ascii nocase
+$a10 = "C:\\Users\\RS01212M\\AppData\\Roaming\\generator\\Proj1\\autoGetKbd\\Release\\ autoScreenShot.pdb" wide ascii nocase
+condition:
+4 of them
+}
